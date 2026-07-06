@@ -9,7 +9,7 @@
 
 % ---------- Fonts: XeLaTeX/LuaLaTeX ----------
 \RequirePackage{fontspec}
-\setmainfont{TeX Gyre Heros}
+\setmainfont{Arial}
 
 % ---------- Language ----------
 \RequirePackage[english]{babel}
@@ -100,6 +100,10 @@
   \small
   \justifying
 }
+
+% ---------- Math ----------
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
 
 % ---------- Hyperlinks ----------
 \RequirePackage[hidelinks]{hyperref}

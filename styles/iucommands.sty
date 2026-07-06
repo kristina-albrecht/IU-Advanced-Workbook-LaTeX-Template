@@ -1,0 +1,46 @@
+% styles/iucommands.sty
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{iucommands}[2026/07/06 IU workbook commands]
+
+\RequirePackage[most]{tcolorbox}
+\RequirePackage{styles/iucolors}
+
+\tcbset{
+  sharp corners,
+  boxrule=0.5pt,
+  left=6pt,
+  right=6pt,
+  top=6pt,
+  bottom=6pt,
+  fonttitle=\bfseries
+}
+
+\newtcolorbox{learningbox}{
+  title=Learning Focus,
+  colback=IULightBlue,
+  colframe=IUBlue
+}
+
+\newtcolorbox{theorybox}{
+  title=Relevant Theory,
+  colback=IULightGrey,
+  colframe=IUDarkGrey
+}
+
+\newtcolorbox{applicationbox}{
+  title=Application,
+  colback=IULightGreen,
+  colframe=IUGreen
+}
+
+\newtcolorbox{reflectionbox}{
+  title=Reflection,
+  colback=IULightOrange,
+  colframe=IUOrange
+}
+
+\newcommand{\iuplaceholder}[1]{%
+  \textit{#1}%
+}
+
+\endinput
