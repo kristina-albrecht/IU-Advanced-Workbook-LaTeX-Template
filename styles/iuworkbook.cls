@@ -112,14 +112,6 @@
 \RequirePackage[nameinlink,noabbrev]{cleveref}
 
 % ---------- IU helper commands ----------
-\newcommand{\frontmatterIU}{
-  \pagenumbering{Roman}
-}
-
-\newcommand{\mainmatterIU}{
-  \clearpage
-  \pagenumbering{arabic}
-}
 
 \newcommand{\iuTitlePage}[9]{
   \begin{titlepage}
