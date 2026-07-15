@@ -2,6 +2,8 @@
 
 A LaTeX template for preparing Advanced Workbooks at IU International University of Applied Sciences.
 
+![image](/assets/advanced_workbook_title_page.png)
+
 The template follows the official IU formatting requirements and provides a modular project structure suitable for VS Code, MiKTeX and GitHub.
 
 > This is an independent project and is not affiliated with or endorsed by IU International University of Applied Sciences. Always verify your work against the latest official guidelines before submission.
