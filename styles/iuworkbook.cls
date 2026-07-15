@@ -11,6 +11,10 @@
 \RequirePackage{fontspec}
 \setmainfont{Arial}
 
+% ---------- Colors ----------
+\RequirePackage{xcolor}
+\definecolor{IUOrange}{HTML}{F28C28}
+
 % ---------- Language ----------
 \RequirePackage[english]{babel}
 \RequirePackage{csquotes}
@@ -120,11 +124,19 @@
 
   \vspace*{1.5cm}
 
-  {\Large IU International University of Applied Sciences\par}
+  % IU logo
+  \IfFileExists{assets/IU_Logo.jpg}{
+    \includegraphics[width=5cm]{assets/IU_Logo.jpg}
+
+    \vspace{1.5cm}
+  }{}
 
   \vspace{1.5cm}
 
-  {\Large #1\par}
+  {
+    \setlength{\fboxsep}{8pt}%
+    \colorbox{IUOrange}{\Large\bfseries ADVANCED WORKBOOK}
+  }
 
   \vspace{1cm}
 
@@ -132,11 +144,11 @@
 
   \vspace{0.5cm}
 
+  {\large IU International University of Applied Sciences\par}
+
   {\large Degree programme: #3\par}
 
   \vspace{2cm}
-
-  {\LARGE\bfseries #4\par}
 
   \vfill
 
