@@ -92,6 +92,38 @@ XeLaTeX
 
 A sample VS Code configuration is provided in `.vscode/settings.json`.
 
+## Citations
+
+The template uses `biblatex` with the APA 7 citation style.
+
+Add your references to `bibliography/references.bib`:
+
+```bibtex
+@book{pearl2009,
+  author    = {Judea Pearl},
+  title     = {Causality},
+  year      = {2009},
+  publisher = {Cambridge University Press}
+}
+```
+
+Use citations in your document:
+
+```latex
+\textcite{pearl2009}      % Pearl (2009)
+
+\parencite{pearl2009}     % (Pearl, 2009)
+
+\parencite[p.~52]{pearl2009} % (Pearl, 2009, p. 52)
+```
+
+Print the bibliography:
+
+```latex
+\printbibliography
+```
+
+
 ## Contributing
 
 Bug reports and pull requests are welcome.
